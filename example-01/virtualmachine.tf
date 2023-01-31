@@ -8,6 +8,7 @@
 #   admin_password      = var.password
 
 #   os_disk {
+#     name                 = "${var.prj}-${var.env}-${var.servername}-os-disk"
 #     caching              = "ReadWrite"
 #     storage_account_type = "Standard_LRS"
 #   }
