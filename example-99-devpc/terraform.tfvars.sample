@@ -1,0 +1,13 @@
+# Azure IDs
+TENANT_ID       = "YOUR_TENANT_ID"
+SUBSCRIPTION_ID = "YOUR_SUBSCRIPTION_ID"
+
+# Resouce Prefix
+location = "westus"
+prj      = "YOUR_PROJECT_NAME"
+env      = "YOUR_ENV_NAME"
+
+# Server configuration
+servername = "YOUR_SERVER_NAME"
+username = "YOUR_SERVER_ADMINUSERNAME"
+password = "YOUR_SERVER_ADMINPASSWORD"
