@@ -23,6 +23,10 @@ variable "env" {
   type = string
 }
 
+variable "servercount" {
+  type = number
+}
+
 variable "servername" {
   type = string
 }
