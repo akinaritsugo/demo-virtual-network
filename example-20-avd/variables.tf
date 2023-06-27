@@ -23,13 +23,9 @@ variable "env" {
   type = string
 }
 
-variable "servercount" {
-  type = number
-}
-
-variable "servername" {
-  type = string
-}
+# variable "servername" {
+#   type = string
+# }
 
 variable "username" {
   type = string
