@@ -14,9 +14,9 @@ resource "azurerm_windows_virtual_machine" "sessionhost" {
   }
 
   source_image_reference {
-    publisher = "MicrosoftWindowsServer"
-    offer     = "WindowsServer"
-    sku       = "2019-Datacenter"
+    publisher = "MicrosoftWindowsDesktop"
+    offer     = "windows-11"
+    sku       = "win11-22h2-avd"
     version   = "latest"
   }
 
@@ -27,6 +27,12 @@ resource "azurerm_windows_virtual_machine" "sessionhost" {
   tags = {
     project     = var.prj
     environment = var.env
+  }
+
+  lifecycle {
+    ignore_changes = [
+      identity,
+    ]
   }
 }
 
