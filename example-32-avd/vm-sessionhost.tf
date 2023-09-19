@@ -23,6 +23,11 @@ resource "azurerm_windows_virtual_machine" "sessionhost" {
   network_interface_ids = [
     azurerm_network_interface.sessionhost.id,
   ]
+
+  tags = {
+    project     = var.prj
+    environment = var.env
+  }
 }
 
 # NIC設定

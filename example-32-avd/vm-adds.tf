@@ -23,6 +23,11 @@ resource "azurerm_windows_virtual_machine" "adds" {
   network_interface_ids = [
     azurerm_network_interface.adds.id,
   ]
+
+  tags = {
+    project     = var.prj
+    environment = var.env
+  }
 }
 
 # NIC設定
